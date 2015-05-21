@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40-ea" fx:controller="application.Controlador">
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.40-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlador">
    <children>
       <Pane prefHeight="600.0" prefWidth="900.0">
          <children>
@@ -21,6 +20,16 @@
             <ImageView fitHeight="150.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../Escritorio/pruebas%20app/membrete.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="450.0" layoutX="150.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Escritorio/pruebas%20app/separador.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="450.0" layoutX="892.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Escritorio/pruebas%20app/separador.jpg" />
                </image>
             </ImageView>
             <Accordion fx:id="menu" layoutY="300.0" prefHeight="302.0" prefWidth="150.0">
