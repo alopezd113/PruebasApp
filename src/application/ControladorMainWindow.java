@@ -5,6 +5,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.scene.control.Accordion;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TitledPane;
 
 public class ControladorMainWindow {
@@ -55,6 +56,14 @@ public class ControladorMainWindow {
     private Button BIFaltas;
 
     @FXML
+    private Label mostrarsaludo;
+
+    @FXML
+    void saludar(ActionEvent event) {
+
+    }
+
+    @FXML
     void initialize() {
         assert menu != null : "fx:id=\"menu\" was not injected: check your FXML file 'MainWindow.fxml'.";
         assert horarios != null : "fx:id=\"horarios\" was not injected: check your FXML file 'MainWindow.fxml'.";
@@ -69,6 +78,14 @@ public class ControladorMainWindow {
         assert informes != null : "fx:id=\"informes\" was not injected: check your FXML file 'MainWindow.fxml'.";
         assert BIGuardias != null : "fx:id=\"BIGuardias\" was not injected: check your FXML file 'MainWindow.fxml'.";
         assert BIFaltas != null : "fx:id=\"BIFaltas\" was not injected: check your FXML file 'MainWindow.fxml'.";
+        assert mostrarsaludo != null : "fx:id=\"mostrarsaludo\" was not injected: check your FXML file 'MainWindow.fxml'.";
 
     }
+
+    
+    @FXML
+    void saludar() {
+    	mostrarsaludo.setText("hola");
+    }
+    
 }
