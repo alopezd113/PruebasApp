@@ -36,27 +36,40 @@
               <panes>
                 <TitledPane fx:id="horarios" animated="false" text="Horarios">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="verHorarios" layoutX="-4.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="156.0" text="Ver horarios" />
+                           </children></AnchorPane>
                   </content>
                 </TitledPane>
                 <TitledPane fx:id="faltas" animated="false" text="Faltas">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="comunicarFalta" layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="152.0" text="Comunicar falta" />
+                              <Button fx:id="verFaltas" layoutX="-2.0" layoutY="27.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="154.0" text="Ver faltas" />
+                           </children></AnchorPane>
                   </content>
                 </TitledPane>
                 <TitledPane fx:id="guardias" animated="false" text="Guardias">
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <SubScene height="200.0" layoutX="-36.0" layoutY="-33.0" width="200.0">
-                                <root>
-                                  <Region />
-                                </root>
-                              </SubScene>
-                           </children>
-                        </AnchorPane>
+                              <Button fx:id="firmarGuardia" layoutX="-2.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="156.0" text="Firmar guardia" />
+                              <Button fx:id="verGuardias" layoutX="-2.0" layoutY="25.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="156.0" text="Ver guardias" />
+                              <Button fx:id="asignarGuardias" layoutX="-5.0" layoutY="50.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="156.0" text="Asignar guardia" />
+                           </children></AnchorPane>
                   </content>
                 </TitledPane>
+                  <TitledPane fx:id="informes" animated="false" text="Informes">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="BIGuardias" layoutX="-2.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="156.0" text="Diario guardias" />
+                              <Button fx:id="BIFaltas" layoutX="-5.0" layoutY="25.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="156.0" text="Diario faltas" />
+                           </children></AnchorPane>
+                    </content>
+                  </TitledPane>
               </panes>
             </Accordion>
          </children>
