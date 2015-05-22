@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<fx:root type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.40-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControladorMainWindow">
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.40-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControladorMainWindow">
    <children>
       <Pane prefHeight="600.0" prefWidth="900.0">
          <children>
@@ -72,8 +72,8 @@
                   </TitledPane>
               </panes>
             </Accordion>
-            <Label fx:id="mostrarsaludo" layoutX="497.0" layoutY="292.0" text="Label" />
+            <Label fx:id="mostrarsaludo" layoutX="280.0" layoutY="239.0" prefHeight="16.0" prefWidth="106.0" text="Label" />
          </children>
       </Pane>
    </children>
-</fx:root>
+</AnchorPane>

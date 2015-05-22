@@ -2,6 +2,8 @@ package application;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Accordion;
 import javafx.scene.control.Button;
@@ -58,9 +60,10 @@ public class ControladorMainWindow {
     @FXML
     private Label mostrarsaludo;
 
+
     @FXML
     void saludar(ActionEvent event) {
-
+    	mostrarsaludo.setText("hola");
     }
 
     @FXML
@@ -80,12 +83,6 @@ public class ControladorMainWindow {
         assert BIFaltas != null : "fx:id=\"BIFaltas\" was not injected: check your FXML file 'MainWindow.fxml'.";
         assert mostrarsaludo != null : "fx:id=\"mostrarsaludo\" was not injected: check your FXML file 'MainWindow.fxml'.";
 
-    }
-
-    
-    @FXML
-    void saludar() {
-    	mostrarsaludo.setText("hola");
     }
     
 }
